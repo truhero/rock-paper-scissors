@@ -3,14 +3,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Rock Paper Scissors</title>
-  <meta name="description" content="The HTML5 Herald">
 
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
+  <header class = "gameheader">
+    <h1>
+      <span class = "rock-color">Rock</span>&nbsp;
+      <span class = "paper-color">Paper</span>&nbsp;
+      <span class = "scissor-color">Scissors</span>&nbsp;
+    </h1> 
+    <p>5 Lives | Choose one of the following:</p>
+    <p> Rock beats Scissors | Scissors beats Paper | Paper beats Rock</p>
+  </header>
+
+  <main class = "main-content">
+    <div class ="button-container">
+      <button class="weapon-button rock-button"><img src="images/rock.png" alt=""></button> 
+      <button class="weapon-button paper-button"><img src="images/paper.png" alt=""></button>
+      <button class="weapon-button scissor-button"><img src="images/scissors.png" alt=""></button>
+    </div>
+    
+    <div class= "seperator"><img class="divider" src="images/divider-line.png" alt=""></div>
+  
+    <div class="results-container">
+      <p class="results-message"></p>
+      <p class="rounds"></p>
+      <p class="lives"></p>
+    </div>
+
+    <div class="game-end-div">
+      <p class="game-end-text"></p>
+      <button class="raise try-again">Fight Again!</button>
+    </div>
+    
+  </main>
+  
+  <footer class="footer-copyright">Kevin Trujillo</footer>
+
   <script src="app.js"></script>
 </body>
 </html>
+
