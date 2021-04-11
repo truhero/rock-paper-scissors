@@ -8,7 +8,6 @@ const resultsMessage = document.querySelector(".results-message");
 let playerLives = 5 ;
 let computerLives = 5 ;
 let round = 0;
-resultsMessage.textContent = "May the best one win!"
 
 function playerPlay(){
     let input = prompt("Choose one: Rock, Paper, or Scissors");
@@ -36,36 +35,36 @@ function playRound(playerSelection, computerSelection) {
         // ROCK > SCISSORS (Human wins)
         if (computerSelection==="scissors"){
             --computerLives;
-            resultsMessage.textContent = "You win! Rock beats scissors!"
+            resultsMessage.textContent = "You played rock and they played scissors! Nice!"
         }
         // PAPER > Rock (Computer wins)
         else if (computerSelection=="paper"){
             --playerLives;
-            resultsMessage.textContent = "You lose! Paper beats Rock! "
+            resultsMessage.textContent = "The played paper and you played rock! Bummer!"
         }
     }
     else if (playerSelection==="paper"){
         // Paper > Rock (Human wins)
         if (computerSelection==="rock"){
             --computerLives;
-            resultsMessage.textContent = "You win! Paper beats rock!"
+            resultsMessage.textContent = "You played paper and they played rock! Nice!"
         }
         // Scissors > Paper (Computer Wins)
         else if (computerSelection==="scissors"){
             --playerLives;
-            resultsMessage.textContentog = "You lose! Scissors beats paper! "
+            resultsMessage.textContentog = "They played scissors and you played rock! Bummer!"
         }
     }
     else if (playerSelection==="scissors"){
         // Scissors > Paper (Human Wins)
         if (computerSelection==="paper"){
             --computerLives;
-            resultsMessage.textContent = "You win! Scissors beats paper!"
+            resultsMessage.textContent = "You played scissors and they played paper - Nice!"
         }
         // Rock > Scissors (Computer Wins)
         else if (computerSelection==="rock"){
             --playerLives;
-            resultsMessage.textContent = "You lose! Rock beats scissors! "
+            resultsMessage.textContent = "They played rock and you played scissors - Bummer!"
         }
     }
 
@@ -113,6 +112,7 @@ function resetGame() {
 
 
 function playGame() {
+    resultsMessage.textContent = "May the best one win!"
     let playerSelection;
     weaponsButtons.forEach((weapon) => {
         weapon.addEventListener('click', () => {
