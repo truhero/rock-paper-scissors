@@ -29,7 +29,7 @@ function computerPlay(){
 
 function playRound(playerSelection, computerSelection) {    
     if (playerSelection === computerSelection){
-        return "It's a TIE!"
+        resultsMessage.textContent = "It's a draw!"
     }
     else if (playerSelection==="rock"){
         // ROCK > SCISSORS (Human wins)
