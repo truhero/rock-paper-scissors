@@ -35,36 +35,36 @@ function playRound(playerSelection, computerSelection) {
         // ROCK > SCISSORS (Human wins)
         if (computerSelection==="scissors"){
             --computerLives;
-            resultsMessage.textContent = "You played rock and they played scissors! Nice!"
+            resultsMessage.textContent = "Your rock beat their scissors! Nice!"
         }
         // PAPER > Rock (Computer wins)
         else if (computerSelection=="paper"){
             --playerLives;
-            resultsMessage.textContent = "The played paper and you played rock! Bummer!"
+            resultsMessage.textContent = "Their paper beat your rock! Bummer!"
         }
     }
     else if (playerSelection==="paper"){
         // Paper > Rock (Human wins)
         if (computerSelection==="rock"){
             --computerLives;
-            resultsMessage.textContent = "You played paper and they played rock! Nice!"
+            resultsMessage.textContent = "Your paper beat their rock! Nice!"
         }
         // Scissors > Paper (Computer Wins)
         else if (computerSelection==="scissors"){
             --playerLives;
-            resultsMessage.textContentog = "They played scissors and you played rock! Bummer!"
+            resultsMessage.textContentog = "Their scissors beat your rock! Bummer!"
         }
     }
     else if (playerSelection==="scissors"){
         // Scissors > Paper (Human Wins)
         if (computerSelection==="paper"){
             --computerLives;
-            resultsMessage.textContent = "You played scissors and they played paper - Nice!"
+            resultsMessage.textContent = "Your  scissors beat their paper - Nice!"
         }
         // Rock > Scissors (Computer Wins)
         else if (computerSelection==="rock"){
             --playerLives;
-            resultsMessage.textContent = "They played rock and you played scissors - Bummer!"
+            resultsMessage.textContent = "Their rock beat your scissors - Bummer!"
         }
     }
 
