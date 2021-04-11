@@ -100,6 +100,9 @@ function countLives(){
         } else {
             endGameText.textContent = "You Lose :-("
         }
+
+        resultsMessage.textContent = ""
+
     }      
 
 }
